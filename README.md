@@ -33,10 +33,6 @@ distributed environment.
 Please take a look at the link below for more information:
 https://channels.readthedocs.io/en/latest/introduction.html
 
-**update 04/06/19**
-
-- using pipenv for package management
-- move to Channels 2
 - use redis as the channel layer backing store. for more information, please check [channels_redis](https://github.com/django/channels_redis)
 
 ### Database
@@ -66,15 +62,15 @@ Because of time constraints this project lacks of:
 1. Create and activate a virtualenv (Python 3)
 
 ```bash
-pipenv --python 3 shell
+python -m venv venv
+./venv/scripts/activate
 ```
 
 2. Install requirements
 
 ```bash
-pipenv install
+pip install -r requirements.txt
 ```
-
 3. Create a MySQL database
 
 ```sql
